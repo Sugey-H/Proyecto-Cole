@@ -1,0 +1,421 @@
+ion-content {
+  --background: #ffffff;
+}
+
+/* HERO */
+
+.hero {
+
+  position: relative;
+
+  height: 420px;
+
+  overflow: hidden;
+}
+
+.hero-img {
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.overlay {
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(58, 90, 64, 0.7);
+}
+
+.hero-text {
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  color: white;
+
+  z-index: 2;
+}
+
+.subtitle {
+
+  color: #FAEDCD;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  font-weight: bold;
+}
+
+.hero-text h1 {
+
+  font-size: 65px;
+
+  margin: 20px 0;
+}
+
+.hero-text p {
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  max-width: 700px;
+}
+
+/* BOOKING SECTION */
+
+.booking-container {
+
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 60px;
+
+  padding: 100px 70px;
+
+  flex-wrap: wrap;
+}
+
+/* LEFT */
+
+.booking-info {
+
+  max-width: 500px;
+}
+
+.small-title {
+
+  color: #780000;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  font-weight: bold;
+}
+
+.booking-info h2 {
+
+  color: #3A5A40;
+
+  font-size: 50px;
+
+  margin: 20px 0;
+}
+
+.booking-info p {
+
+  line-height: 1.9;
+
+  color: #444;
+
+  margin-bottom: 30px;
+}
+
+/* EVENT BOXES */
+
+.event-cards {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.event-box {
+
+  background: #fff1cc;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+
+  transition: 0.4s;
+}
+
+.event-box:hover {
+
+  transform: translateY(-5px);
+}
+
+.event-box h3 {
+
+  color: #588157;
+
+  margin-bottom: 10px;
+}
+
+/* FORM */
+
+.booking-form {
+
+  background: rgb(185, 132, 132);
+
+  padding: 40px;
+
+  border-radius: 25px;
+
+  width: 430px;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.booking-form h2 {
+
+  color: #3A5A40;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+/* CALENDAR */
+
+.calendar {
+
+  background: #FAEDCD;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  margin-bottom: 30px;
+}
+
+.calendar-header {
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.calendar-header h3 {
+
+  color: #3A5A40;
+
+  font-size: 28px;
+}
+
+.weekdays,
+.days {
+
+  display: grid;
+
+  grid-template-columns: repeat(7, 1fr);
+
+  gap: 10px;
+
+  text-align: center;
+}
+
+.weekdays span {
+
+  font-weight: bold;
+
+  color: #588157;
+}
+
+.days div {
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  margin: auto;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+/* AVAILABLE */
+
+.available {
+
+  background: #588157;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.available:hover {
+
+  transform: scale(1.1);
+}
+
+/* BOOKED */
+
+.booked {
+
+  background: #780000;
+
+  color: white;
+
+  opacity: 0.7;
+}
+
+/* SELECTED */
+
+.selected {
+
+  background: #3A5A40;
+
+  color: white;
+
+  border: 3px solid #FAEDCD;
+}
+
+.empty {
+
+  visibility: hidden;
+}
+
+/* LEGEND */
+
+.legend {
+
+  display: flex;
+
+  gap: 25px;
+
+  margin-bottom: 30px;
+}
+
+.legend-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.circle {
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+}
+
+.available-color {
+
+  background: #588157;
+}
+
+.booked-color {
+
+  background: #780000;
+}
+
+/* FORM INPUTS */
+
+ion-item {
+
+  margin-bottom: 18px;
+
+  --background: #FAEDCD;
+
+  border-radius: 14px;
+}
+
+/* BUTTON */
+
+.custom-btn {
+
+  margin-top: 20px;
+
+  --background: linear-gradient(
+    45deg,
+    #588157,
+    #3A5A40
+  );
+
+  --color: white;
+
+  --border-radius: 30px;
+
+  height: 50px;
+
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer {
+
+  background: #3A5A40;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+
+  gap: 40px;
+
+  padding: 70px 40px;
+}
+
+.footer-box {
+
+  max-width: 300px;
+}
+
+.footer-box h2 {
+
+  color: #FAEDCD;
+
+  margin-bottom: 20px;
+}
+
+.footer-box p {
+
+  line-height: 1.8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .hero-text h1 {
+    font-size: 45px;
+  }
+
+  .booking-info h2 {
+    font-size: 36px;
+  }
+
+  .booking-form {
+    width: 100%;
+  }
+
+  .booking-container {
+    padding: 60px 25px;
+  }
+
+}

@@ -4,22 +4,24 @@ import {
   IonContent,
   IonButton,
   IonItem,
-  IonInput
+  IonInput,
+  IonTextarea
 } from '@ionic/angular/standalone';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-agenda',
+  templateUrl: './agenda.page.html',
+  styleUrls: ['./agenda.page.scss'],
   standalone: true,
   imports: [
     IonContent,
     IonButton,
     IonItem,
-    IonInput
-  ],
+    IonInput,
+    IonTextarea
+  ]
 })
 
-export class HomePage {
+export class AgendaPage {
 
 }
